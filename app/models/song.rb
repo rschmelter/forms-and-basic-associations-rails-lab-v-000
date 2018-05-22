@@ -36,7 +36,7 @@ class Song < ActiveRecord::Base
     self.notes.each do |contents|
       notes_array << contents.content
     end
-    contents
+    notes_array
     # binding.pry
   end
 
