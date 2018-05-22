@@ -33,11 +33,10 @@ class Song < ActiveRecord::Base
   end
 
   def note_contents
-    notes_array = []
-    self.notes.each do |contents|
-      notes_array << contents.content
+    self.notes.collect do |contents|
+      contents.content
     end
-    notes_array
+  
     # binding.pry
   end
 
