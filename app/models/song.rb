@@ -25,7 +25,7 @@ class Song < ActiveRecord::Base
     end
   end
 
-  def notes_contents=(contents)
+  def note_contents=(contents)
     binding.pry
   end
 
