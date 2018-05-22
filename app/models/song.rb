@@ -19,7 +19,9 @@ class Song < ActiveRecord::Base
   end
 
   def artist_name
+    if self.artist
     self.artist.name
+  end
   end
 
   def notes=(notes)
