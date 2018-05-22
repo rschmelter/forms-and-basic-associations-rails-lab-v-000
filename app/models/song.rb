@@ -29,7 +29,6 @@ class Song < ActiveRecord::Base
     array.each do |content|
       self.notes.build(content: content) unless content == " "
     end
-
   end
 
   def note_contents
