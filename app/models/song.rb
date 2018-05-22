@@ -36,7 +36,7 @@ class Song < ActiveRecord::Base
     self.notes.collect do |contents|
       contents.content
     end
-  
+
     # binding.pry
   end
 
