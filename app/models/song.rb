@@ -23,6 +23,8 @@ class Song < ActiveRecord::Base
     end
   end
 
-
+  def notes_contents=(contents)
+    binding.pry
+  end
 
 end
