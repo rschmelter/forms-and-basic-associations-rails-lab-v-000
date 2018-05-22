@@ -25,6 +25,7 @@ class Song < ActiveRecord::Base
   def notes=(notes)
     notes.each do |note|
     end
+  end
 
 
 end
